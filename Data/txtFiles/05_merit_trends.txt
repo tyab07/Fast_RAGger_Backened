@@ -1,0 +1,5 @@
+Estimated Closing Aggregates:
+BSCS: 72–74%
+BSAI: 70–72%
+BSSE: 69–71%
+BSDS: 67–69%

@@ -1,0 +1,9 @@
+FAST follows a strict merit-only policy.
+
+Eligibility:
+- SSC: 60%
+- HSSC: 60%
+- Computing programs require Math
+
+Merit Formula:
+Aggregate = 50% Test + 40% HSSC + 10% SSC

@@ -1,0 +1,5 @@
+BSCS: Broad foundation
+BSSE: Process oriented
+BSAI: AI specialization, heavy math
+BSDS: Data analytics
+Common Core first 3-4 semesters

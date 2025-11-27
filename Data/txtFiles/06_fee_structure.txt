@@ -1,0 +1,5 @@
+Admission: 30,000
+Security: 20,000
+Tuition: 11,000 per credit hour
+Semester Avg: 189,500
+4-Year Estimate: 1.57M PKR

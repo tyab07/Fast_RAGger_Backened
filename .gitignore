@@ -1,0 +1,60 @@
+# -----------------------
+# Python Bytecode
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------
+# Virtual Environment
+# -----------------------
+venv/
+env/
+.venv/
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
+logs/
+*.out
+*.err
+
+# -----------------------
+# ChromaDB / Cache
+# -----------------------
+# Ignore local cache but allow txt or other data files
+chromadb/cache/      # ignore cache folder if it exists
+chromadb/*.sqlite    # ignore sqlite db if you don’t want it
+
+# Allow .txt or other data files inside ChromaDB folder
+!chromadb/**/*.txt
+!chromadb/**/*.md
+
+# -----------------------
+# Environment Files
+# -----------------------
+.env
+.env.*              # .env.local, .env.development, etc.
+*.local
+
+# -----------------------
+# Python packaging
+# -----------------------
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# -----------------------
+# IDE / OS Files
+# -----------------------
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

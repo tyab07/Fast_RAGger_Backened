@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+motor
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+chromadb
+sentence-transformers
+requests
+numpy

@@ -1,0 +1,3 @@
+Facilities: Hostels, Labs, Cafeteria
+Societies: ACM, IEEE, Debate
+Hostel restrictions apply
