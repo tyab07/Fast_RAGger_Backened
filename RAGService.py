@@ -11,8 +11,6 @@ load_dotenv()
 class RAGService:
     def __init__(self):
         self.api_key = os.getenv("DS_KEY")
-        # You can try 'deepseek/deepseek-chat' if 'r1' is too verbose, 
-        # but this code handles cleaning 'r1' output.
         self.model_name = os.getenv("MODEL", "deepseek/deepseek-r1:free")
         self.endpoint = "https://openrouter.ai/api/v1/chat/completions"
         self.chroma_path = "chroma_persistent_storage"
@@ -23,7 +21,7 @@ class RAGService:
         self.chroma_client = chromadb.PersistentClient(path=self.chroma_path)
         self.collection = self.chroma_client.get_or_create_collection(
             name="document_qa_collection",
-            embedding_function=None
+            embedding_function=None 
         )
         
         self.sync_documents()
@@ -61,6 +59,7 @@ class RAGService:
                 embeddings.append(self.get_local_embedding(chunk))
 
             self.collection.add(ids=ids, documents=docs, metadatas=metadatas, embeddings=embeddings)
+            print(f"✅ Successfully ingested {filename}")
         except Exception as e:
             print(f"❌ Error ingesting {filename}: {e}")
 
@@ -73,7 +72,7 @@ class RAGService:
             start = end - chunk_overlap
         return chunks
 
-    def call_deepseek(self, prompt: str, system_instruction: str = None) -> str:
+    def call_deepseek(self, prompt: str, system_instruction: str = None, temperature: float = 0.3) -> str:
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -81,8 +80,8 @@ class RAGService:
             "X-Title": "FastBot"
         }
         
-        # Stricter System Prompt to prevent reasoning output
-        sys_content = system_instruction or "You are a helpful assistant. Output ONLY the answer. Do NOT output internal reasoning, thought processes, or <think> tags."
+        # Friendly but strict persona
+        sys_content = system_instruction or "You are a helpful assistant."
 
         payload = {
             "model": self.model_name,
@@ -90,7 +89,8 @@ class RAGService:
                 {"role": "system", "content": sys_content},
                 {"role": "user", "content": prompt}
             ],
-            "temperature": 0.1, # Lower temp for more deterministic, concise answers
+            # Temperature 0.3: Natural language, but stays on topic
+            "temperature": temperature, 
             "max_tokens": 512
         }
         
@@ -103,39 +103,63 @@ class RAGService:
             return "Error generating response."
 
     def clean_response(self, text: str) -> str:
-        # 1. Remove <think>...</think> blocks (DeepSeek R1 standard)
+        # 1. Remove <think> blocks
         cleaned = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
         
-        # 2. Aggressively remove conversational reasoning fillers if tags aren't used
-        # This Regex looks for common starting phrases of reasoning
-        cleaned = re.sub(r'^(Okay|Alright|Hmm|Let me|I need to|The user wants).*?(\n|$)', '', cleaned, flags=re.IGNORECASE | re.MULTILINE)
+        # 2. Remove meta-commentary (e.g., "Based on the text")
+        # Since temp is higher, we need to be careful to catch these if they slip in
+        patterns = [
+            r'^Based on the provided.*?(\n|$)',
+            r'^According to the.*?(\n|$)',
+            r'^The documents state.*?(\n|$)',
+            r'^I checked the context.*?(\n|$)',
+        ]
+        for pattern in patterns:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE | re.MULTILINE)
 
-        # 3. Clean up leading/trailing whitespace
         return cleaned.strip()
 
     def generate_answer(self, question: str) -> str:
+        # 1. Retrieve Context
         query_embedding = self.get_local_embedding(question)
-        results = self.collection.query(query_embeddings=[query_embedding], n_results=3)
+        results = self.collection.query(query_embeddings=[query_embedding], n_results=5)
+        
         relevant_chunks = [doc for sublist in results["documents"] for doc in sublist]
         context = "\n\n".join(relevant_chunks)
 
-        if not context: return "I couldn't find relevant information in the documents."
+        if not context.strip(): 
+            return "I'm sorry, I don't have information about that in the university records."
 
-        prompt = f"Context:\n{context}\n\nQuestion: {question}\n\nAnswer directly and concisely."
-        raw_answer = self.call_deepseek(prompt)
+        # 2. System Instruction: Persona = Friendly Advisor, but Rules = Strict Data Use
+        system_instruction = (
+            "You are a helpful and friendly Student Advisor for FAST University. "
+            "Answer the user's question conversationally. "
+            "IMPORTANT RULES: "
+            "1. You must ONLY use the information provided in the Context Block below. "
+            "2. Do NOT use outside knowledge (like general politics, world leaders, or general coding). "
+            "3. Do NOT mention that you are reading from a 'file', 'context', or 'document'. Just give the answer naturally."
+        )
+
+        # 3. User Prompt: Explicitly hides the mechanism
+        prompt = f"""
+        Internal Knowledge Base (Use this information ONLY):
+        ---------------------
+        {context}
+        ---------------------
+
+        User Question: {question}
+
+        Directives:
+        - If the answer is found in the Internal Knowledge Base, explain it clearly and warmly.
+        - If the answer is NOT in the Internal Knowledge Base, politely say: "I'm sorry, but I can only answer questions related to the university information I have access to."
+        - Do NOT describe your search process (e.g., do not say "I found this section...").
+        """
+
+        # 4. Call Model with 0.3 Temperature (Human-like but grounded)
+        raw_answer = self.call_deepseek(prompt, system_instruction, temperature=0.3)
         return self.clean_response(raw_answer)
 
     def generate_chat_title(self, first_message: str) -> str:
-        # Prompt explicitly asks for ONLY the title
-        prompt = f"Summarize this into a 3-5 word title: '{first_message}'. Return ONLY the title text. Do not use quotes or prefixes."
-        
-        raw_title = self.call_deepseek(prompt, system_instruction="You are a title generator. Output ONLY the title. No reasoning.")
-        
-        # Clean and ensure it's short
-        clean_title = self.clean_response(raw_title).replace('"', '').replace("Title:", "").strip()
-        
-        # Fallback if cleaning failed and it's still too long
-        if len(clean_title) > 50: 
-            return first_message[:30] + "..."
-            
-        return clean_title if clean_title else "New Chat"
+        prompt = f"Summarize this query into a short 3-5 word title: '{first_message}'. No quotes."
+        raw_title = self.call_deepseek(prompt, system_instruction="Title Generator", temperature=0.5)
+        return self.clean_response(raw_title).replace('"', '').replace("Title:", "").strip()
