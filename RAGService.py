@@ -195,52 +195,79 @@ class RAGService:
             return "Error generating response."
 
     def extract_final_answer(self, text: str) -> str:
-        """Extract only the final answer by removing thinking blocks"""
+        """
+        Extract only the final answer by removing ALL thinking and reasoning text
+        """
+        if not text:
+            return text
+            
+        # Remove everything before the actual answer starts
         cleaned = text
         
-        # Remove thinking blocks
-        cleaned = re.sub(r'<think>.*?</think>', '', cleaned, flags=re.DOTALL)
-        cleaned = re.sub(r'<\|thinking\|>.*?<\|end\|>', '', cleaned, flags=re.DOTALL)
-        
-        # Remove process descriptions
-        process_patterns = [
-            r'^Based on (the|this) (context|information|documents?),',
-            r'^According to (the|this) (context|information|documents?),',
-            r'^Looking at (the|this) (context|information|documents?),',
+        # Remove thinking blocks and reasoning patterns
+        patterns_to_remove = [
+            # Thinking/reasoning blocks
+            r'<think>.*?</think>',
+            r'<\|thinking\|>.*?<\|end\|>',
+            # Process descriptions
+            r'^.*?(Okay|Alright|Let me|First|Now|So).*?(look|check|analyze|see|examine).*?\.\s*',
+            r'^.*?(I see|I found|I can see|I notice).*?(in the|from the|that).*?\.\s*',
+            r'^.*?(Based on|According to|Looking at|From|In).*?(context|documents|information).*?\.\s*',
+            # Section references
+            r'^.*?(section|question|part|policy).*?\d+.*?(says|states|mentions).*?\.\s*',
+            r'^.*?\d+\..*?(says|states|mentions).*?\.\s*',
+            # Reasoning conclusions
+            r'^.*?(So|Therefore|Thus|Hence).*?(the answer|the information).*?\.\s*',
+            # Direct process mentions
+            r'^.*?(Let me look through|Let me check|I need to analyze).*',
+            r'^.*?(The context|The documents|The information).*(shows|indicates|states).*',
         ]
         
-        for pattern in process_patterns:
-            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE)
-            
+        for pattern in patterns_to_remove:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
+        
+        # Remove any line that contains reasoning keywords
+        lines = cleaned.split('\n')
+        filtered_lines = []
+        reasoning_keywords = [
+            'let me', 'first', 'so', 'therefore', 'thus', 'hence',
+            'based on', 'according to', 'looking at', 'from the',
+            'i see', 'i found', 'i notice', 'i can see',
+            'section', 'question', 'policy', 'context says',
+            'the documents', 'the information'
+        ]
+        
+        for line in lines:
+            line_lower = line.lower().strip()
+            # Keep the line only if it doesn't contain reasoning keywords
+            # or if it's very short (likely the actual answer)
+            if not any(keyword in line_lower for keyword in reasoning_keywords) or len(line) < 100:
+                filtered_lines.append(line)
+        
+        cleaned = ' '.join(filtered_lines)
+        
+        # Clean up multiple spaces and trim
         cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-        return cleaned
-
-    def debug_collection(self):
-        """Debug function to check what's in the collection"""
-        print("\n=== DEBUG COLLECTION ===")
-        try:
-            all_docs = self.collection.get()
-            print(f"Total documents in collection: {len(all_docs['ids'])}")
-            
-            if all_docs['ids']:
-                print("Sample documents:")
-                for i, (doc_id, doc_content) in enumerate(zip(all_docs['ids'][:3], all_docs['documents'][:3])):
-                    print(f"{i+1}. ID: {doc_id}")
-                    print(f"   Content: {doc_content[:100]}...")
-                    if all_docs['metadatas']:
-                        print(f"   Metadata: {all_docs['metadatas'][i]}")
-                    print()
+        
+        # If we removed everything, return the original but cleaned
+        if not cleaned:
+            # Last resort: take everything after the last reasoning indicator
+            last_reasoning = max(
+                text.lower().rfind('so ') if 'so ' in text.lower() else -1,
+                text.lower().rfind('therefore ') if 'therefore ' in text.lower() else -1,
+                text.lower().rfind('thus ') if 'thus ' in text.lower() else -1,
+            )
+            if last_reasoning != -1:
+                cleaned = text[last_reasoning:].strip()
+                # Remove the reasoning word itself
+                cleaned = re.sub(r'^(so|therefore|thus)\s+', '', cleaned, flags=re.IGNORECASE)
             else:
-                print("❌ Collection is empty!")
-                
-        except Exception as e:
-            print(f"Debug error: {e}")
+                cleaned = text.strip()
+        
+        return cleaned
 
     def generate_answer(self, question: str) -> str:
         print(f"\n🔍 Processing question: '{question}'")
-        
-        # Debug collection first
-        self.debug_collection()
         
         # Detect if question is in Roman Urdu
         is_roman_urdu = self.detect_roman_urdu(question)
@@ -275,54 +302,51 @@ class RAGService:
                     return "Maaf karein, mere paas university ke records mein is bare mein koi malumat nahi hai."
                 return "I'm sorry, I don't have information about that in the university records."
 
-            # 2. Enhanced System Instruction
+            # 2. STRICTER System Instruction - No thinking in output at all
             base_instruction = (
-                "You are a helpful and friendly Student Advisor for FAST University. "
-                "Follow this process internally:\n"
-                "1. THINK: Analyze the context and question carefully in your mind\n"
-                "2. PLAN: Determine the best way to answer based on available information\n" 
-                "3. ANSWER: Provide only the final answer naturally\n\n"
-                "STRICT OUTPUT RULES:\n"
-                "- Do NOT show your thinking process in the final answer\n"
-                "- Do NOT mention documents, context, or search process\n"
-                "- Do NOT use phrases like 'Based on...', 'According to...'\n"
-                "- Provide the answer as if you naturally know it\n"
-                "- Be conversational and direct\n"
-                "- If information is missing, politely say you don't know\n"
+                "You are a helpful Student Advisor for FAST University. "
+                "CRITICAL RULES - READ CAREFULLY:\n"
+                "1. PROVIDE ONLY THE FINAL ANSWER - no thinking, no reasoning, no process description\n"
+                "2. NEVER mention documents, context, sections, or where you found information\n"
+                "3. NEVER use phrases like 'Based on...', 'According to...', 'The documents show...'\n"
+                "4. NEVER describe your analysis process or what you 'see' in the context\n"
+                "5. Answer as if you naturally know this information\n"
+                "6. Be direct and concise - start with the answer immediately\n"
+                "7. If information is incomplete, provide what you know without mentioning limitations\n"
+                "8. DO NOT UNDER ANY CIRCUMSTANCES include your reasoning process in the output\n\n"
+                "THINK INTERNALLY BUT OUTPUT ONLY THE PURE ANSWER"
             )
             
             if is_roman_urdu:
-                base_instruction += "RESPOND in Roman Urdu (Urdu written in English script) since the user asked in Roman Urdu."
+                base_instruction += "\n9. RESPOND in Roman Urdu (Urdu written in English script) since the user asked in Roman Urdu."
 
-            # 3. Enhanced prompt
-            prompt = f"""
-CONTEXT FROM UNIVERSITY RECORDS:
+            # 3. STRICTER prompt - No room for thinking in output
+            prompt = f"""USER QUESTION: {question}
+
+RELEVANT INFORMATION (FOR INTERNAL USE ONLY - DO NOT MENTION):
 {context}
 
-USER QUESTION: {question}
-
-INTERNAL PROCESS (DO NOT SHOW IN ANSWER):
-1. First, analyze the context thoroughly to understand what information is available
-2. Then, determine if the context contains relevant information for the question
-3. Finally, formulate a clear, direct answer using only the context information
-
-FINAL ANSWER REQUIREMENTS:
+STRICT OUTPUT REQUIREMENTS:
 - Provide ONLY the direct answer to the question
-- Do NOT explain your thinking process or analysis steps
-- Do NOT reference the context or documents
-- Speak naturally as if you're having a conversation
-- If the answer isn't in the context, politely decline without explanation
+- DO NOT include any reasoning, analysis, or thinking process
+- DO NOT reference where you got the information
+- DO NOT use introductory phrases
+- Start with the answer immediately
+- Be conversational but factual
+- If you cannot answer based on the information, say so simply without explanation
 """
 
-            # 4. Call Model
+            # 4. Call Model with lower temperature for more direct answers
             print("🤖 Calling DeepSeek API...")
-            raw_answer = self.call_deepseek(prompt, base_instruction, temperature=0.3)
+            raw_answer = self.call_deepseek(prompt, base_instruction, temperature=0.1)  # Lower temp for directness
             
-            # 5. Extract final answer
+            # 5. Aggressive cleaning to remove ANY thinking text
             final_answer = self.extract_final_answer(raw_answer)
             
-            print(f"✅ Generated answer: {final_answer[:100]}...")
-            return final_answer if final_answer else "I'm sorry, I don't have that information available."
+            print(f"📝 Raw answer: {raw_answer[:200]}...")
+            print(f"✅ Final answer: {final_answer}")
+            
+            return final_answer if final_answer else "I don't have that information available."
 
         except Exception as e:
             print(f"❌ Error in generate_answer: {e}")
@@ -338,6 +362,27 @@ FINAL ANSWER REQUIREMENTS:
             temperature=0.3
         )
         return self.extract_final_answer(raw_title).replace('"', '').replace("Title:", "").strip()
+
+    def debug_collection(self):
+        """Debug function to check what's in the collection"""
+        print("\n=== DEBUG COLLECTION ===")
+        try:
+            all_docs = self.collection.get()
+            print(f"Total documents in collection: {len(all_docs['ids'])}")
+            
+            if all_docs['ids']:
+                print("Sample documents:")
+                for i, (doc_id, doc_content) in enumerate(zip(all_docs['ids'][:3], all_docs['documents'][:3])):
+                    print(f"{i+1}. ID: {doc_id}")
+                    print(f"   Content: {doc_content[:100]}...")
+                    if all_docs['metadatas']:
+                        print(f"   Metadata: {all_docs['metadatas'][i]}")
+                    print()
+            else:
+                print("❌ Collection is empty!")
+                
+        except Exception as e:
+            print(f"Debug error: {e}")
 
     def force_reingest_all(self):
         """Force re-ingest all documents (useful for debugging)"""

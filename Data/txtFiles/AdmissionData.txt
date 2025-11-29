@@ -1,0 +1,382 @@
+1–4: Programs & Eligibility
+1. What programs are available for admission?
+•	Undergraduate Programs (Bachelors):
+o	BBA
+o	BS in Accounting & Finance, Banking & Finance, FinTech, Computer Science, Engineering, BA.
+•	Graduate Programs (Masters):
+o	MBA (1.5 and 2-year programs)
+o	MS in Applied Linguistics, Computing, and other specialized MS programs.
+•	PhD Programs:
+o	PhD in various disciplines including Electrical Engineering, Computer Science, Management, etc.
+2. What are the eligibility criteria for each program?
+•	Eligibility depends on the program level and prior education:
+o	Undergraduate: HSSC (F.Sc) or equivalent, O/A-levels with equivalency certificate. Pre-medical students must have passed Additional Mathematics to apply for computing programs.
+o	Graduate (MBA/MS): Relevant bachelor’s degree with minimum CGPA as per program requirement. Business background students may get exemptions in MBA program (up to 30 credit hours).
+o	PhD: MS/MPhil degree in relevant field. Research proposal and past academic record considered. Max 50% credits can be transferred from another university.
+•	Detailed program-wise eligibility: Eligibility Criteria Link
+3. What minimum marks/percentage are required?
+•	Merit is calculated using entry test + past academic record (SSC, HSSC, bachelor’s degree marks).
+•	No fixed minimum SAT score or percentage guarantees admission.
+•	NTS or SAT results may be accepted for merit calculation, and cut-offs are announced with each merit list.
+4. Is an entry test required for admission?
+•	Yes, all programs require an admission test, except for some cases where SAT/NTS scores are accepted for merit evaluation.
+•	For certain programs like MS in Data Science, NTS GAT is accepted.
+________________________________________
+5–8: Admission Test
+5. What is the format of the admission test?
+•	The test format depends on the program:
+o	Undergraduate Business Programs (BBA/BS AF/FinTech): English, Essay Writing, Analytical Skills & IQ, Basic Math
+o	Undergraduate CS/Engineering: English, Analytical Skills, Basic & Advanced Math
+o	MBA/MS: English, Essay, Analytical Skills, Quantitative Methods, Business Knowledge
+o	MS/PhD Specializations: Specialization-focused sections included (e.g., 45% weight for your specialization area in MS Applied Linguistics)
+6. What subjects are included in the test?
+•	English (Grammar, Comprehension)
+•	Essay Writing (topic-based)
+•	Analytical Skills & IQ (logical reasoning, problem solving)
+•	Basic and Advanced Math (depending on program)
+•	Specialization Area (program-specific questions)
+•	Quantitative Methods (for MBA/MS programs)
+•	Business Knowledge (MBA programs)
+7. Is there any sample paper available for practice?
+•	Yes, the university provides sample tests and detailed test patterns online: Test Pattern & Samples
+8. When is the admission test conducted?
+•	The schedule is issued online after submission of the application.
+•	Test details, campus, and time are mentioned on your admit card, which you print after paying the application/test fees.
+________________________________________
+9–10: Registration & Documents
+9. How can I register for the admission test?
+•	Registration is online only via the university portal.
+•	You will receive a unique Application Reference Number (ARN) to track your application.
+•	Applications submitted via post or in person are not accepted.
+10. What documents are required for admission?
+•	CNIC (for Pakistani students) or Passport/POR number (for international students)
+•	Academic transcripts/DMCs for SSC/HSSC or bachelor’s/masters degree
+•	Equivalence certificates for O/A levels from IBCC
+•	Recent passport-size photograph (JPG format <1 MB)
+•	Any additional documents as required by your program (e.g., research proposal for PhD).
+________________________________________
+11–16: Fees
+11. What is the admission fee?
+•	Rs. 30,000 (one-time payment at the time of admission).
+•	If you are already a graduate of the university joining a higher degree, this fee is waived.
+12. Is the admission fee refundable?
+•	No, non-refundable.
+•	Security deposit of Rs. 20,000 is refundable after graduation or closing of admission.
+13. What is the total semester fee?
+•	Tuition per credit hour: Rs. 11,000 (for BBA, BS, MBA, MS, PhD)
+•	Student Activities Fund: Rs. 2,500 per semester
+•	Example: 15 credit hours × 11,000 + 2,500 = Rs. 167,500 per semester
+14. Are there any additional hidden charges?
+•	Miscellaneous fees:
+o	Transcript: Rs. 300
+o	Campus transfer: Rs. 5,000
+o	Temporary campus transfer: Rs. 2,000
+o	Degree correction: Rs. 2,000
+o	Semester freeze (first 2 weeks): Rs. 2,000
+o	Late registration, freeze, withdrawal after 2nd week: Rs. 5,000
+o	Retake exams: Rs. 2,000 per course
+o	Paper rechecking: Rs. 500 per course
+•	Late payment fine: Re 1/day per Rs. 1,000
+15. Is the fee payable monthly or per semester?
+•	Per semester, before the start of classes.
+16. How do I pay the admission fee?
+•	Offline: Print challan and deposit cash at Faysal Bank branch.
+•	Online: Via Kuickpay portal, which supports multiple banks and mobile payments (EasyPaisa, JazzCash).
+________________________________________
+17–20: Scholarships
+17. Are scholarships available?
+•	Yes, for merit and need-based students.
+18. Types of scholarships:
+•	Merit scholarships for top students in merit lists or board exams
+•	HEC-funded scholarships for graduate/PhD students
+•	PEEF (Punjab Education Endowment Fund)
+•	Sindh, KPK, and Baluchistan government scholarships
+19. How can I apply for a scholarship?
+•	Apply online after admission.
+•	Some require separate applications (e.g., PEEF, KPEF).
+20. Criteria to maintain a scholarship:
+•	Maintain minimum GPA: 3.0 per semester (merit-based)
+•	Financial aid renewed each semester based on academic performance and need
+________________________________________
+21–26: Online Admission
+21. Is online admission available?
+•	Yes, application and test registration are fully online.
+22. How do I fill out the online admission form?
+•	Visit Online Admission Portal
+•	Complete personal and academic information
+•	Upload required documents
+23. Can I edit my application after submission?
+•	No, editing is not allowed. Incorrect info may lead to cancellation.
+24. What documents must be uploaded?
+•	CNIC/Passport, academic transcripts, equivalency certificates, recent photo (JPG <1 MB).
+25. Is there a deadline for submitting documents?
+•	Documents must be submitted before admission closure.
+•	Provisional admission allowed if results are pending.
+26. How do I check my admission status?
+•	Login to admission portal using ARN.
+________________________________________
+27–31: Merit & Interview
+27. When will the merit list be displayed?
+•	After evaluation of admission tests and academic records.
+28. How many merit lists are displayed?
+•	Multiple lists may be released depending on vacancies.
+29. What should I do if my name appears?
+•	Submit fees, verify documents, and complete admission process.
+30. What if my name doesn’t appear in the first list?
+•	Wait for subsequent merit lists or apply for other programs if eligible.
+31. Is there any interview after the test?
+•	For undergraduate programs, usually no interview.
+•	For graduate programs, an interview may be required for certain MS/PhD programs.
+32. What questions are asked in the interview?
+•	Program-specific questions, academic background, motivation, and research interest (for PhD/MS).
+33. Do I need to bring original documents?
+•	Yes, originals required for verification during admission or interview.
+________________________________________
+34–36: International Students & Quotas
+34. Separate admission policy for international students:
+•	Use passport/POR for registration
+•	Visa support letter provided for embassy
+•	Special test arrangements possible if needed
+35. Are quota seats for specific categories?
+•	No reserved seats for NTS; merit-based admission
+•	Government scholarships for provinces may have criteria
+36. Can a student apply for more than one program?
+•	Yes, with Rs. 500 per additional program or campus.
+37. Can I change my program later?
+•	Yes, if merit and eligibility requirements of new program are met.
+________________________________________
+37–40: Merit & Test Scores
+38. How is merit calculated?
+•	Combination of entry test marks + academic record (SSC/HSSC, bachelor’s, or equivalent).
+39. Weightage for test and academics:
+•	Varies by program. Example: Analytical Skills 20–25%, Math 20–50%, English/Essay 10–30%
+40. Are NTS/SAT scores accepted?
+•	Yes, NTS NAT/GAT or SAT scores may be used for merit calculation.
+•	No minimum SAT score guarantees admission; NTS cut-off decided by university.
+________________________________________
+41–50: Miscellaneous Admissions
+41. Admission processing time:
+•	Depends on program and campus; check portal regularly.
+42. Who to contact for queries:
+•	Campus emails: admissions.cfd@nu.edu.pk, admissions.isb@nu.edu.pk, admissions.khi@nu.edu.pk, etc.
+•	Phone numbers available per campus.
+43. Is there a helpdesk for new students?
+•	Yes, via campus admission office and emails.
+44. Can I visit campus before applying?
+•	Yes, recommended for program and campus selection.
+45. Orientation for new students:
+•	Held on first day; timetable, course registration, and policies explained.
+46. Last date to confirm admission:
+•	As per merit list and campus instructions; check portal.
+47. What happens if I miss the deadline?
+•	Admission may be canceled; fee may not be refunded.
+48. Fee refund procedure:
+•	Admission fee: non-refundable
+•	Security deposit: refundable
+•	Tuition fee: refunded per HEC policy (100–0% depending on day of withdrawal)
+49. Can I defer my admission to next semester?
+•	Possible with campus approval; contact relevant campus.
+50. When do classes start for new students?
+•	Announced on orientation day; campus timetable.
+How Can I Apply for Admission?
+The procedure for admission is as follows:
+1.	Admission Application Form must be filled online by following the instructions. Click Here for Online Admission Application.
+2.	Applications received through post or by hand will not be accepted/entertained.
+3.	The online system assigns a unique Application Reference Number (ARN) to each applicant, which must be noted for later use.
+4.	Applicant will confirm that information entered in the Admission Application Form is correct. In case of incorrect information, the University has all the rights to cancel the application/admission without any fee refund.
+5.	Applicant will deposit the Application Fee in the designated Bank. Fee is non-refundable/adjustable.
+6.	Upon payment of the Application Processing Fee (and additional Admission Test Fee), the applicant will print his/her ADMIT CARD bearing the applicant's TEST ROLL NUMBER.
+7.	The applicant should then visit the test campus on the specified date and time as mentioned on the Admit card.
+8.	Admission of a student automatically stands cancelled if S/he fails in the required exam whose result was not available at the time of admission application.
+Are there any additional fees being charged?
+At the time of admission, you will be charged the admission fee, the security deposit, the tuition fee of first semester, and student activity fund.
+For subsequent semesters, you will only be charged the tuition fee and the student activity fund.
+Taxes, if any shall be applicable as per government rules.
+I can't afford to pay the fees.
+FAST, being a non-profit organization, charges subsidized fees from all its students. Realizing that even the subsidized fee may not be affordable for some of its students, FAST tries to arrange financial assistance in the form of loans for such indigent students. This assistance is subject to renewal every semester in the light of the student's academic performance and financial need. Financial assistance is limited to tuition fees only and is discontinued if the students' CGPA falls below 2.00 for undergraduate degree and 2.5 for graduate degree.
+The repayment of loan starts three months after graduation or getting a job, whichever is earlier. The total amount has to be repaid within a period of four years after graduation. Students are required to sign to this effect.
+There are other loans available. Please visit the university website for details.
+I have applied for the NU loan but still can't afford to pay the first semester.
+You would need to pay the admission, security fee, and student activity fund. For the tuition fee, you can apply for the fee in installments to the campus director.
+I have got an offer from another university and would like to apply for refund.
+1.	Admission Fee is non-refundable. Security deposit is refundable at the time of completion of degree or closing of admission. Tuition Fee is refunded in accordance with the guidelines of Higher Education Commission (HEC).
+2.	Please visit the following link for details: https://nu.edu.pk/Admissions/FeeStructure
+What are the emails on which I can contact campuses?
+For Chiniot-Faisalabad campus: admissions.cfd@nu.edu.pk
+For Islamabad campus: admissions.isb@nu.edu.pk
+For Karachi campus: admissions.khi@nu.edu.pk
+For Lahore campus: admissions.lhr@nu.edu.pk
+For Peshawar campus: admissions.pwr@nu.edu.pk
+For Multan Campus: admissions.mul@nu.edu.pk
+How can I contact the campuses by phone?
+Islamabad Campus Tel: (051) 111 128 128 or (051) 831 4100-29
+Lahore Campus Tel: (042)111 128 128 or (042) 516 5680-83
+Karachi City Campus: Tel: (021) 343 90941-5
+Karachi Main Campus Tel: (021) 111 128 128 or (021) 341 00541-6
+Peshawar Campus Tel: (091) 111 128 128.
+Chiniot - Faisalabad Campus Tel: (041) 111-128-128
+Multan Campus Tel: (061) 111-128-128
+Nobody is picking up my phone
+The working hours are generally Monday to Friday from 08:00 to 16:00. If you do not receive a response, it would be best that you email them your query.
+
+I am unable to upload documents (CNIC, DMC, Transcript, Equivalence Certificate, Picture etc) during an online application?
+Please make sure that your picture / scan of the document being uploaded is in JPG format and is less than 1 MB in size. For help kindly email to admissions@nu.edu.pk
+I have uploaded wrong document; how can I correct it?
+Please send it to relevant campus and they will do the needful.
+I am facing issues / hurdles in paying through the bank for registration, kindly guide me?
+FAST NU also provides facility of online payment through "Kuickpay". For details of payment through "Kuickpay" you may visit: https://app.kuickpay.com/PaymentsBillPayment
+Where can I find test patterns and test samples?
+Thank you for your interest! You can visit our website to explore detailed information about the test patterns and access sample tests. https://www.nu.edu.pk/Admissions/TestPattern
+When will test results be announced, how will I know if I'm selected?
+You can check your result by logging to the admission portal. If you notice some delays on the day of the result announcement, it would be due to the server load. In this case, just try again after a few hours. Moreover, you may also receive SMS/Email from the concerned campus.
+I'm a foreign student and registration for admission requires CNIC#, kindly let me know what I should do?
+You can register yourself using your passport number. If you are from Afghanistan, you can use your POR number. If you required any information or help kindly email intoffice@nu.edu.pk
+Can I migrate / transfer to another campus after admission?
+Migration from one campus to another is difficult if you did not meet the merit requirements of the desired campus. However, in a few extenuating circumstances, consideration can be made. Refer to the prospectus for details.
+I am a student of another university and want to transfer to FAST. What should I do?
+Just apply for admission as a normal student. Then, when you get admitted, apply for a credit transfer with your department. Some of your credits may then be transferable as per rules. The exact courses which would be transferred depend on the committee's decision. However, please note that as per HEC rules, a maximum of 50% credits can be transferred only.
+I have done an Associate degree from another university and want to join in the 5th semester at FAST. What should I do?
+FAST does accept students from associate degree programs. Just apply for admission as a normal student. Then, when you get admitted, apply for credit transfer with your department. Some of your credits may then be transferrable as per rules. The exact courses which would be transferred depend on the committee's decision. However, please note that as per HEC rules, a maximum of 50% of credits can be transferred only.
+What are the transport arrangements?
+Faisalabad, Islamabad, Karachi, and Peshawar campus operate buses in the city along selected routes.
+What are the hostel arrangements?
+Faisalabad and Peshawar campus have hostel facilities available for boys. For girls, only Faisalabad campus has a university managed hostel. For other campuses, you can avail private hostel accommodations, or private university managed hostels. All campuses maintain a list of reputable and good quality hostels. You can ask for these lists from your campus.
+Are classes held on weekends?
+Each campus follows its own timetable on this matter. Karachi campus has a weekend program. Other campuses may not necessarily have a weekend program, but a few subjects may be scheduled on Saturdays if the students and faculty give consent. All classes are held during weekdays, only makeup classes may be occasionally held during weekends.
+Are classes held in the evenings?
+Other than Faisalabad campus, all other campuses may schedule classes in the evening. Some Master's degree programs are held in the evening, the information is available on the website.
+I need to know about the timetable of my classes.
+You'll receive the timetable for your classes on the orientation day.
+I am not happy with the timetable I am given.
+Please feel free to discuss any concerns you have with the Academic Office.
+How many seats are for NTS?
+There are no seats set aside for NTS. Cut-offs are decided for NTS when the merit list is announced. Seats not reserved for any test.
+If a student has failed a subject in HSSC/A-Levels and has reappeared this year with part two exams, is he eligible to apply?
+As long as the student has registered to appear or has given the relevant exams in May, June, July, s/he can apply and attempt the admission test, and will be offered provisional admission on being selected. However, S/he must submit all the results. Incase s/he fails in a subject which is a must to meet the eligibility criteria the admission will be canceled.
+My HSSC Part -- II result is not announced? What should I do?
+You can apply on the basis of your HSSC Part-I exam. If you meet the merit criteria, you will be offered provisional admission. This means that you need to provide your HSSC Part -- II result as soon as it is announced. If you meet the eligibility and selection criteria, your provisional admission will be converted to a confirmed admission. If the eligibility or selection criteria are not established, your admission will be closed.
+How is merit calculated?
+Merit is calculated based on entry test marks, and past academic record. Check the eligibility and selection criteria for details.
+What about SAT Score?
+The merit for SAT students will be calculated in the same way as the NU test. There shall be no minimum SAT score requirement for ensuring the admission of SAT based applicants.
+What is a credit hour?
+Credit hour is linked to the number of hours of teaching activities during any given week of the semester. In the case of your course, 1 credit hour is equal to 1 hour of teaching activities. In the case of a lab, 1 credit hour is equal to 3 hours of teaching activities. As an example, if you are studying for a 3+1 course, you will have 3 hours of classes/week, and 3 hours of labs/week. For BS studies, the 3 hours of classes are generally spread across two classes of 90 minutes each.
+When will admissions be announced?
+You need to follow the official announcement page which is https://nu.edu.pk/Admissions/Schedule
+If there are any modifications, follow the social media page for any update.
+I am a student in the 6th semester at Islamabad campus. Can I take summer for one subject which I failed in spring semester and take it on another campus in summer and then come back in fall semester in ISB campus and continue.
+Yes you can. Ask your own department for a list of courses being offered at other campuses. Alternatively, contact the department of the desired summer campus for a list of courses being offered.
+I am a foreign student and need a visa to appear for the admission test.
+Apply to FAST as early as possible and inform the campus administration immediately about your travel needs. A letter of support will be provided to you which you would need to provide to the Pakistan embassy or consulate of your respective country and city. If some reason you receive your visa after the test date, a substitute test can be arranged for you as a special case. Please email intoffice@nu.edu.pk
+Is it possible to shift my PhD admission from another university to FAST?
+Apply as a normal student and inform the campus about your intent for transfer of credits. The campus graduate studies committee will evaluate your case. As per HEC rules, a maximum of 50% credits are transferable. Please note that you will still join FAST in the course-work phase. Research credits earned will not be considered.
+I am eligible for admission to multiple campuses. What should I do?
+Consider factors like location, facilities, faculty, and program reputation to make an informed decision. Visit campuses if possible, and talk to current students or alumni to get a feel for each environment.
+Is FAST better than other universities?
+National and International rankings may be checked for the standing of degree programs offered.
+Is the entry test difficult?
+The difficulty of the entry test can vary, but it's designed to assess your readiness for the program. Prepare by reviewing relevant material and practicing similar questions.
+Programs offered?
+Different campuses offer different degree programs. Please visit the university website (www.nu.edu.pk) for the programs you are interested in.
+Eligibility Criteria & Selection?
+Kindly visit the following link for detailed information: https://nu.edu.pk/Admissions/EligibilityCriteria
+Is NTS GAT accepted for admission in MS Data Science?
+Yes
+Policy for Pre-Medical Students
+Pre-medical students who have passed Additional Mathematics or are awaiting their results are eligible to apply for admission to all computing programs. However, if a student fails to submit the Additional Mathematics result after admission, their admission shall be cancelled.
+Hostels - Where applicable
+Please go through the University website for details or contact the relevant campus.
+What is the difference between "Study Hour" and "Credit Hour"?
+"Study Hour" refers to the time spent in structured learning activities, such as lectures, seminars, or lab sessions. It represents the amount of time students dedicate to academic pursuits.
+One Credit hour means teaching a theory course for one classroom-teaching hour each week throughout the semester.
+Are the O Level marks multiplied by 1.1?
+No
+If a student has completed the F.Sc and has higher marks in Matric, will his F.Sc marks be considered or will Matric be considered for admission?
+Merit is calculated on the basis of an entry test and past academic record which includes marks in SSC and HSSC. For more details kindly visit the website.
+Can electrical engineers apply for computing programs?
+If the student clears the MS(CS) admission test and offered admission, then S/he will have to do at least 4 deficiency courses along with the regular MS courses.
+Do we accept ECAT?
+We do accept ECAT test results for getting admission in engineering programs subjects to the submission of ECAT results before the closing of our admission cycle.
+Kindly share closing merit for admissions.
+Merit cut-off marks are revised every year for each degree and campus.
+Kindly share entry test Fees?
+Rs. 3000 is payable by all applicants including those who are seeking admission on the basis of NTS (NAT or GAT) test. If an applicant wants to take more than one Admission Test, then an Additional Fee of Rs. 500 is payable for each additional Admission Test.
+I am not able to pay test fees, kindly allow me to appear in the test without fees.
+It is mandatory to pay the test fees.
+Can I apply for the NTS NAT June session and can put the result of the June NAT result. Will FAST accept June NTS NAT or not?
+If your result is declared and available before July 4, 2025, then you can apply.
+I want to know that, how much NTS NAT test score I have to secure for getting admission.
+There are no minimum marks which guarantee admission. NTS cutoff will be decided by the university. Please check the selection criteria on our website - https://nu.edu.pk/Admissions/EligibilityCriteria
+I want to ask if there will be any problem if I give the NAT ICS test instead of the NAT IE test. Will Fast University accept my test? I come from a pre-engineering background.
+For Computing and management sciences programs, all are acceptable.
+For Engineering programs only NAT- IE is acceptable.
+If I have completed my 2nd year of studies, and instead of providing the result of the 2nd year, I give the result of the 1st year, will it be correct or incorrect? Because this time the highest percentage in Matric or Inter will be considered or not.
+Please send an email to admissions@nu.edu.pk for correction of your records before the admissions deadline.
+Does FAST offer any scholarship?
+Yes. Details are available at https://nu.edu.pk/Admissions/Scholarship
+I have completed my O levels and A levels. Is it mandatory to submit equivalencies?
+Yes, we will require Equivalencies from IBCC, but you can submit A levels equivalency one week after declaration of A levels result.
+I want to take admission in the Karachi campus but currently I am not in the city. Can I appear for a test on another campus?
+Yes, you can appear for an entry test at your nearest campus.
+If due to some urgent reason, I cannot appear in the test on the selected date, is it possible to reschedule it?
+You need to submit an authentic reason with proof, then management will reschedule your test if the deadline is not over.
+What will be the timings of MS Classes as I am currently working 9 to 5?
+Please contact the relevant campus for the timing of the classes.
+Charges for hostel facility?
+Kindly contact the relevant campus.
+Charges for transport facility?
+Please contact the relevant campus.
+Transport routes?
+Please contact the relevant campus.
+Why Fast-NUCES?
+FAST-NUCES is renowned for its quality education, strong industry connections, and emphasis on innovation.
+What career opportunities do I have after studying CS?
+After studying Computer Science, you have a wide range of career opportunities available to you, including:
+•	Software Developer/Engineer
+•	Data Scientist
+•	Cybersecurity Analyst
+•	Web Developer
+•	Mobile App Developer
+•	Systems Analyst
+•	Network Engineer
+•	Database Administrator
+•	Machine Learning Engineer
+•	IT Project Manager
+These are just a few examples, as the field of Computer Science is vast and continually evolving, offering diverse career paths in various industries such as technology, finance, healthcare, and entertainment.
+What courses does Fast school of management offer?
+Please check https://nu.edu.pk/Degree-Programs for the relevant degree and courses, all degrees are not offered at all campuses.
+What are course electives in Computing programs?
+Kindly visit the relevant campus or contact the Computing Academic Office for details.
+Can I apply for more than one campus?
+Yes. You need to pay 500/- for each additional campus along with the application fee.
+I have applied for BS (CS) and not selected, am I eligible for admission in BS (EE), BBA, BS (BA) or vice versa?
+Yes. You can meet the eligibility criteria and the merit score of the targeted programs. For more details kindly visit the link https://nu.edu.pk/Admissions/EligibilityCriteria
+Are Electrical Engineering programs accredited with the Pakistan Engineering Council?
+Yes, all the engineering programs are accredited with the PEC under level II (Washington accord).
+What are the Specialization Streams in Electrical Engineering?
+You can choose one of the following streams at the start of 5th semester of BS (EE):
+•	Computer Engineering
+•	Electronics Engineering
+•	Power Engineering
+What are the eligibility/Selection criteria for MS (EE)/?
+Please go through the university website for details.
+What are the eligibility criteria for MBA 1.5 and MBA 2 years Degree program?
+The university offers an MBA program for students from both business and non-business backgrounds. It is a 2-year, 60 credit hour program. Students with business-related degrees like BBA, BS Accounting and Finance, or Master's in Commerce may get up to 30 credit hours of exemption, as allowed by HEC.
+For the eligibility criteria please go through the link
+https://nu.edu.pk/Admissions/EligibilityCriteria
+Are there any specialized research areas in MS and PhD programs offered in the EE departments?
+For detailed information, please visit the concerned campus.
+Are there any research labs in the Electrical Engineering department?
+For detailed information, please visit the concerned campus.
+Are there any experimental labs in the Electrical Engineering department?
+For detailed information, please visit the concerned campus.
+Are there any funding sources for Electrical Engineering graduate programs (MS or PhD)?
+Research Assistantship and Graduate Fellowships are available for PhD programs. 6 months International Research Support Exchange under HEC funding.
+What is the eligibility / selection criteria for admission to PhD (EE)?
+Please see the information at the link
+https://nu.edu.pk/Admissions/EligibilityCriteria
+Is there any interest on the loan?
+No, it is totally interest free loan.
+Can we pay the hostel and transport fee in installments?
+Upon the recommendation of the Financial Aid Committee, installment payment can be allowed to the deserving students.
+
